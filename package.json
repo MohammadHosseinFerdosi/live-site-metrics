@@ -1,0 +1,34 @@
+{
+  "name": "live-site-metrics",
+  "version": "1.0.0",
+  "description": "Playwright-based live Core Web Vitals and performance metrics toolkit",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "live-site-metrics": "./bin/live-site-metrics.mjs"
+  },
+  "scripts": {
+    "collect": "node src/cli.mjs",
+    "collect:desktop": "node src/cli.mjs --profile desktop",
+    "collect:mobile": "node src/cli.mjs --profile mobile",
+    "report": "node src/cli.mjs --from-json reports/latest.json --html reports/latest.html",
+    "browsers": "playwright install chromium firefox webkit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "playwright",
+    "core-web-vitals",
+    "lcp",
+    "cls",
+    "inp",
+    "performance",
+    "web-vitals"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "playwright": "^1.48.0"
+  }
+}
