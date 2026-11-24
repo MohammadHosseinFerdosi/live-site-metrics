@@ -1,0 +1,15 @@
+node_modules/
+.env
+.auth/
+reports/
+.tmp/
+history/*.json
+!history/.gitkeep
+playwright-report/
+test-results/
+blob-report/
+*.log
+.DS_Store
+Thumbs.db
+website-cwv-*.html
+website-cwv-*.md
